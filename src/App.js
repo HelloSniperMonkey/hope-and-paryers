@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Web3 from 'web3'
 import './App.css'
-import { TODO_LIST_ABI, TODO_LIST_ADDRESS } from './config3'
+import { TODO_LIST_ABI, TODO_LIST_ADDRESS } from './config'
 import TodoList from './TodoList'
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
 
     this.createTask = this.createTask.bind(this);
     this.toggleCompleted = this.toggleCompleted.bind(this);
-    this.deleteTask = this.deleteTask.bind(this);  // Bind deleteTask here
+    this.deleteTask = this.deleteTask.bind(this);  
   }
 
   componentDidMount() {
@@ -24,7 +24,7 @@ class App extends Component {
   }
 
   async loadBlockchainData() {
-    const web3 = new Web3(Web3.givenProvider || "http://localhost:7545");
+    const web3 = new Web3(Web3.givenProvider || "http://localhost:7545");  //gets the web3 link or subsitutes it for general ganache link
     const accounts = await web3.eth.getAccounts();
     this.setState({ account: accounts[0] });
 
@@ -111,6 +111,7 @@ class App extends Component {
         <p className="navbar-brand mx-auto" > 
           Todo List
         </p>
+        <p className='address'>{TODO_LIST_ADDRESS}</p>
       </nav>
       <div className="container d-flex justify-content-center align-items-center vh-100">
         <div className="todo-container p-4 bg-white rounded shadow-sm">
