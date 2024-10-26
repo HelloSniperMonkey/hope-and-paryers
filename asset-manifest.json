@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/hope-and-prayers/static/css/main.fc77d6ca.css",
-    "main.js": "/hope-and-prayers/static/js/main.c6523c94.js",
-    "index.html": "/hope-and-prayers/index.html",
-    "main.fc77d6ca.css.map": "/hope-and-prayers/static/css/main.fc77d6ca.css.map",
-    "main.c6523c94.js.map": "/hope-and-prayers/static/js/main.c6523c94.js.map"
+    "main.css": "/hope-and-paryers/static/css/main.fc77d6ca.css",
+    "main.js": "/hope-and-paryers/static/js/main.c6523c94.js",
+    "index.html": "/hope-and-paryers/index.html",
+    "main.fc77d6ca.css.map": "/hope-and-paryers/static/css/main.fc77d6ca.css.map",
+    "main.c6523c94.js.map": "/hope-and-paryers/static/js/main.c6523c94.js.map"
   },
   "entrypoints": [
     "static/css/main.fc77d6ca.css",
